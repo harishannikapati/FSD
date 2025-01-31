@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Registration Example</title>
+</head>
+    <style>
+        table {
+            width: 50%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Registration Form</h2>
+    <form action="#" method="post">
+        <table>
+            <tr>
+                <th><label >Name:</label></th>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+            <tr>
+                <th><label >Password:</label></th>
+                <td><input type="password" id="password" name="password" required></td>
+            </tr>
+            <tr>
+                <th><label >Phone Number:</label></th>
+                <td><input type="number" id="number" name="number" required></td>
+            </tr>
+            <tr>
+                <th><label >Date of Birth:</label></th>
+                <td><input type="date" id="dob" name="dob" required></td>
+            </tr>
+            <tr>
+                <th>Hobbies:</th>
+                <td>
+                    <input type="checkbox" id="hobby1" name="hobbies" value="Reading"> Reading
+                    <input type="checkbox" id="hobby2" name="hobbies" value="Traveling"> Traveling
+                </td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male" required> Male
+                    <input type="radio" id="female" name="gender" value="female"> Female
+                </td>
+            </tr>
+            <tr>
+                <th><label >Country:</label></th>
+                <td>
+                    <select id="country" name="country">
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="2" style="text-align: center;">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </th>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
